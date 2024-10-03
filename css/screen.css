@@ -216,11 +216,14 @@ h1 {
 ol {
   display: flex;
   flex-direction: column;
-  row-gap: 0.196em;/* 0.35 of paragraph line height - top lineheight of self - bottom lineheight of above = 9.1px - 2 -2 = 5.1px */
+  row-gap: 0.346em;/* 0.5 of paragraph line height - top lineheight of self - bottom lineheight of above = 13px - 2 -2 = 9px */
   padding-top: 0.7045em;
 }
 
-
+#input-age-verification {
+  flex-direction: row;
+  column-gap: 0.91667em; /* gutter width =  24px? = 0.91667em */
+}
 
 
 /* ===== LAYOUT STYLES ====== */
