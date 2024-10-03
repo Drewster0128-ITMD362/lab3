@@ -196,7 +196,7 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #2B2B35;
   
 }
@@ -233,8 +233,12 @@ input {
   font-size: 0.7272em;
   line-height: 1em;
   border: none;
-  box-shadow: 0 .25rem 1rem 0 #282e3e1f;
   border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+input:hover, input:active {
+  background-color: #f8f9fa;
 }
 
 #input-age-verification {
@@ -243,9 +247,15 @@ input {
 }
 
 #input-submit {
-  font-size: 1.375em;
-  line-height: 1.65em;
+  
   padding-top: 0.2954em; /*0.75 of paragraph line height = 19.5px - 2(bottom lineheight whitespace) - 9(row gap) - 2(top lineheight whitespace) = 6.5px */
+}
+
+#submit {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-variant: small-caps;
+  font-weight: 600;
 }
 
 
