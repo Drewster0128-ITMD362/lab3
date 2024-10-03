@@ -196,6 +196,8 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
+  font-family: sans-serif;
+  color: #2B2B35;
 }
 
 label {
@@ -205,19 +207,29 @@ label {
 li {
   display: flex;
   flex-direction: column;
+  row-gap: 0.409em; /* 0.5 of paragraph line height = 13px - (2)bottom of label  - 2(top of label input) = 9px */
 }
 
 h1 {
   font-size: 1.618em; /* 35.596px */
   line-height: 1.182em; /* ~42.7152px */
-  padding-bottom: 0.4197em; /* 0.75 of paragraph line height - lineheight from h1 - lineheight from p = 26 * 0.75 = 19.5px - 1px - 3.5596px = 14.9404px = 0.4197(35.596px) */
+  padding-bottom: 0.3916em; /* 0.75 of paragraph line height - lineheight from h1 - lineheight from p = 26 * 0.75 = 19.5px - 2px - 3.5596px = 13.9404px = 0.3916(35.596px) */
+  color: black;
 }
 
 ol {
   display: flex;
   flex-direction: column;
-  row-gap: 0.346em;/* 0.5 of paragraph line height - top lineheight of self - bottom lineheight of above = 13px - 2 -2 = 9px */
-  padding-top: 0.7045em;
+  row-gap: 0.7045em;/* 0.75 of paragraph line height - top lineheight of self - bottom lineheight of above = 19.5px - 2 -2 = 15.5px */
+  padding-top: 1em; /* 1 of paragraph line height = 26 - 2(bottom lineheight of subtitle) - 2(top lineheight of label) = 22px */
+}
+
+input {
+  font-size: 0.7272em;
+  line-height: 1em;
+  border: none;
+  box-shadow: #00000059 0px 3px 5px;
+  border-radius: 5px;
 }
 
 #input-age-verification {
@@ -225,15 +237,41 @@ ol {
   column-gap: 0.91667em; /* gutter width =  24px? = 0.91667em */
 }
 
+#input-submit {
+  font-size: 1.375em;
+  line-height: 1.65em;
+  padding-top: 0.2954em; /*0.75 of paragraph line height = 19.5px - 2(bottom lineheight whitespace) - 9(row gap) - 2(top lineheight whitespace) = 6.5px */
+}
+
+
 
 /* ===== LAYOUT STYLES ====== */
 
 
 /* ===== STATE STYLES ======= */
 
-/* Mobile media query */
+/* Tablet media query */
 @media only screen and (min-width: 480px) {
   
+  main {
+    max-width: 22.727em;
+    margin: auto;
+  }
+
+  li {
+    flex-direction: row;
+    column-gap: 0.91667em;
+  }
+
+  #email {
+    flex-grow: 1;
+    max-width: 23.0625em;
+  }
+
+  #submit {
+    width: fit-content;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width: 992px) {
