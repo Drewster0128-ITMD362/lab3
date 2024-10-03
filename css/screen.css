@@ -202,10 +202,25 @@ label {
   display: block;
 }
 
-h1 {
-  font-size: 1.618em;
-  line-height: 1.182em
+li {
+  display: flex;
+  flex-direction: column;
 }
+
+h1 {
+  font-size: 1.618em; /* 35.596px */
+  line-height: 1.182em; /* ~42.7152px */
+  padding-bottom: 0.4197em; /* 0.75 of paragraph line height - lineheight from h1 - lineheight from p = 26 * 0.75 = 19.5px - 1px - 3.5596px = 14.9404px = 0.4197(35.596px) */
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.196em;/* 0.35 of paragraph line height - top lineheight of self - bottom lineheight of above = 9.1px - 2 -2 = 5.1px */
+  padding-top: 0.7045em;
+}
+
+
 
 
 /* ===== LAYOUT STYLES ====== */
@@ -219,5 +234,5 @@ h1 {
 }
 
 @media only screen and (min-width: 992px) {
-  
+
 }
