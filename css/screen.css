@@ -202,8 +202,22 @@ label {
   display: block;
 }
 
+h1 {
+  font-size: 1.618em;
+  line-height: 1.182em
+}
+
+
 /* ===== LAYOUT STYLES ====== */
 
 
 /* ===== STATE STYLES ======= */
 
+/* Mobile media query */
+@media only screen and (min-width: 480px) {
+  
+}
+
+@media only screen and (min-width: 992px) {
+  
+}
