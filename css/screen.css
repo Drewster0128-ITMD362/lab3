@@ -198,6 +198,11 @@ html {
   text-rendering: optimizeLegibility;
   font-family: sans-serif;
   color: #2B2B35;
+  
+}
+
+main {
+  background-color: #fffffe;
 }
 
 label {
@@ -252,10 +257,16 @@ input {
 
 /* Tablet media query */
 @media only screen and (min-width: 480px) {
+
+  html {
+    background-color: #F6F7FB;
+  }
   
   main {
     max-width: 22.727em;
     margin: auto;
+    padding: 1em;
+    box-shadow: 0 .25em 1em 0 #282e3e1f;
   }
 
   li {
@@ -275,5 +286,5 @@ input {
 }
 
 @media only screen and (min-width: 992px) {
-
+  
 }
