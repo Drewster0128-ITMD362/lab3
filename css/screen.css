@@ -237,9 +237,7 @@ input {
   background-color: #e9ecef;
 }
 
-input:hover, input:active {
-  background-color: #f8f9fa;
-}
+/* ===== LAYOUT STYLES ====== */
 
 #input-age-verification {
   flex-direction: row;
@@ -258,12 +256,11 @@ input:hover, input:active {
   font-weight: 600;
 }
 
-
-
-/* ===== LAYOUT STYLES ====== */
-
-
 /* ===== STATE STYLES ======= */
+
+input:hover, input:active {
+  background-color: #f8f9fa;
+}
 
 /* Tablet media query */
 @media only screen and (min-width: 480px) {
@@ -293,8 +290,4 @@ input:hover, input:active {
     width: fit-content;
     margin: auto;
   }
-}
-
-@media only screen and (min-width: 992px) {
-  
 }
